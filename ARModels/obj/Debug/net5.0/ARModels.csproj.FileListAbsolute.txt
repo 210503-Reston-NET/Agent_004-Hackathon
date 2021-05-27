@@ -1,0 +1,12 @@
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\bin\Debug\net5.0\ARModels.deps.json
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\bin\Debug\net5.0\ARModels.dll
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\bin\Debug\net5.0\ref\ARModels.dll
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\bin\Debug\net5.0\ARModels.pdb
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\obj\Debug\net5.0\ARModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\obj\Debug\net5.0\ARModels.AssemblyInfoInputs.cache
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\obj\Debug\net5.0\ARModels.AssemblyInfo.cs
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\obj\Debug\net5.0\ARModels.csproj.CoreCompileInputs.cache
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\obj\Debug\net5.0\ARModels.dll
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\obj\Debug\net5.0\ref\ARModels.dll
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\obj\Debug\net5.0\ARModels.pdb
+C:\Users\CesarsPc\Desktop\Hackathon\AssociateReviews\ARModels\obj\Debug\net5.0\ARModels.csprojAssemblyReference.cache
