@@ -28,10 +28,7 @@ namespace ARModels
                 _rating = value;
             }
         }
-        /// <summary>
-        /// Verbose description of the dining experience
-        /// </summary>
-        /// <value></value>
+
         public string Description { get; set; }
         //FK reference to the Associate
         public int AssociateId { get; set; }
