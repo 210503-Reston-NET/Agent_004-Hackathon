@@ -10,7 +10,7 @@ namespace ARBL
     /// </summary>
     public class AssociateBL : IAssociateBL
     {
-
+        
         private IRepository _repo;
         public AssociateBL(IRepository repo)
         {
@@ -19,7 +19,7 @@ namespace ARBL
 
         public Associate AddAssociate(Associate Associate)
         {
-            // Todo: call a repo method that adds a Associate
+          
             if (_repo.GetAssociate(Associate) != null)
             {
                 throw new Exception("Associate already exists :<");
@@ -36,7 +36,6 @@ namespace ARBL
 
         public List<Associate> GetAllAssociates()
         {
-
             return _repo.GetAllAssociates();
         }
 
