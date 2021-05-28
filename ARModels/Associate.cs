@@ -11,7 +11,6 @@ namespace ARModels
     /// </summary>
     public class Associate
     {
-
         private string _city;
         public Associate(string name, string city, string state, int revaturePoints)
         {

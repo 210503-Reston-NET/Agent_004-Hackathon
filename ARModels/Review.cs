@@ -20,7 +20,6 @@ namespace ARModels
             get { return _rating; }
             set
             {
-                //Setting validation logic in properties
                 if (_rating < 0)
                 {
                     throw new Exception("Rating should be greater tha zero.");
@@ -28,9 +27,12 @@ namespace ARModels
                 _rating = value;
             }
         }
-
+        /// <summary>
+        /// Verbose description of the dining experience
+        /// </summary>
+        /// <value></value>
         public string Description { get; set; }
-        //FK reference to the Associate
+
         public int AssociateId { get; set; }
         public int Id { get; set; }
 
