@@ -87,30 +87,10 @@ namespace ARWebUI.Controllers
         }
 
 
-        //public ActionResult Edits(int id)
-        //{
-          //  return View(new AssociateVM(_associateBL.GetAssociateById(id)));
-        //}
-        // POST: AssociateController/Edit/5
-        
-        public ActionResult Edits(int id, AssociateVM associateVM)
-        {
-            try
-            {
-                _associateBL.UpdateAssociate(new Associate(associateVM.Id, associateVM.name, associateVM.City, associateVM.State, associateVM.RevaPoints));
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-
         // GET: AssociateController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(new AssociateVM(_associateBL.GetAssociateById(id)));
         }
 
         // POST: AssociateController/Delete/5
@@ -120,7 +100,7 @@ namespace ARWebUI.Controllers
         {
             try
             {
-                
+                _associateBL.DeleteAssociate(_associateBL.GetAssociateById(id));
                 return RedirectToAction(nameof(Index));
             }
             catch

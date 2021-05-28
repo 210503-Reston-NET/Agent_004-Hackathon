@@ -4,10 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>List of Associates</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New Associate</a>
 </p>
 <table class="table">
     <thead>
@@ -45,8 +45,7 @@
             <td>
                 @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
                 @Html.ActionLink("Leave a QC Review", "Index","Review", new { id=item.Id}) |
-                @Html.ActionLink("Add/Remove RevaPoints", "Edits", new {  id=item.Id , associateVM = item}) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
             </td>
         </tr>
 }
