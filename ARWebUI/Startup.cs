@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ARDL;
 using Microsoft.EntityFrameworkCore;
+using ARBL;
 
 namespace ARWebUI
 {
@@ -27,6 +28,10 @@ namespace ARWebUI
         {
             services.AddControllersWithViews();
             services.AddDbContext<AssociateDBContext>(options => options.UseNpgsql(Configuration.GetConnectionString("ARDB")));
+            services.AddScoped<IRepository, RepoDB>();
+            services.AddScoped<IAssociateBL, AssociateBL>();
+            services.AddScoped<IReviewBL, ReviewBL>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

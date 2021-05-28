@@ -1,0 +1,42 @@
+﻿@model IEnumerable<RRWebUI.Models.ReviewVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@ViewBag.Associate.Name</h1>
+<h4>Associate Hometown: @ViewBag.Associate.City, @ViewBag.Associate.State</h4>
+<h4>Current RevaPoints: @ViewBag.Associate.RevaturePoints</h4>
+<h6>Overall Rating: @ViewData["OverallRating"]</h6>
+
+<p>
+    @Html.ActionLink("Add a review", "Create", new { id = ViewBag.Associate.Id })
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    @Html.ActionLink("Back to list of Associates", "Index", "Associate")
+</p>
