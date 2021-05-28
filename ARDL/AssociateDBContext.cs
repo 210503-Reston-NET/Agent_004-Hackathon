@@ -4,7 +4,7 @@ namespace ARDL
 {
     public class AssociateDBContext : DbContext
     {
-        // constructor needed to pass in connection string 
+      
         public AssociateDBContext() : base()
         {
 
@@ -15,7 +15,6 @@ namespace ARDL
         }
 
 
-        //Declaring entities 
         public DbSet<Associate> Associates { get; set; }
         public DbSet<Review> Reviews { get; set; }
 
