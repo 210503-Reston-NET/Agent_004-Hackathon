@@ -31,7 +31,7 @@ namespace ARBL
         {
             Associate toBeDeleted = _repo.GetAssociate(Associate);
             if (toBeDeleted != null) return _repo.DeleteAssociate(toBeDeleted);
-            else throw new Exception("Associate does not exist. Must've been deleted already :>");
+            else throw new Exception("Associate does not exist");
         }
 
         public List<Associate> GetAllAssociates()
