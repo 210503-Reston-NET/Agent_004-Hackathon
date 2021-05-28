@@ -8,5 +8,7 @@ namespace ARBL
         Associate AddAssociate(Associate Associate);
         Associate GetAssociate(Associate Associate);
         Associate DeleteAssociate(Associate Associate);
+        Associate GetAssociateById(int id);
+        Associate UpdateAssociate(Associate associate);
     }
 }

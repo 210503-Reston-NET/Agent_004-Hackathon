@@ -11,5 +11,7 @@ namespace ARDL
         Associate DeleteAssociate(Associate Associate);
         Review AddReview(Associate Associate, Review review);
         List<Review> GetReviews(Associate Associate);
+        Associate GetAssociateById(int id);
+        Associate UpdateAssociate(Associate associate);
     }
 }
